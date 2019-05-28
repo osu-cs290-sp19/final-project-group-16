@@ -1,3 +1,5 @@
+/* Functionality to make search button work */
+/* Created by Theresa Mai */
 /* make the search button clickable and workable */
 var searchButton = document.getElementById('navbar-search-button');
 searchButton.addEventListener('click', searchPost);
