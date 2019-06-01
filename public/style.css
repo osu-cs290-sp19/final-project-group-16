@@ -1,0 +1,171 @@
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #eee;
+}
+
+header {
+  width:100%;
+  height: auto;
+  position:fixed;
+  top:0px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+a {
+  text-decoration: none;
+  color: #343434;
+}
+
+a:hover,
+a:focus {
+  color: #DFBA69;
+}
+
+a:focus {
+  outline: none;
+}
+
+.setright {
+  float: right;
+}
+
+
+.navbar-search {
+  
+  margin-right: 20px;
+  padding: 0;
+  line-height: 38px;
+}
+
+#navbar-search-input {
+  width: 450px;
+  height: 29px;
+  margin-top: 20px;
+  padding: 4px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid #b4b4b4;
+  border-radius: 30px;
+}
+
+#navbar-search-input:focus {
+  outline: none;
+  background-color:#fff;
+
+}
+
+#navbar-search-button {
+  margin-left: -5px;
+  font-size: 21px;
+  background: none;
+  border: none;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+#navbar-search-button:hover {
+  color: #DFBA69;
+}
+
+#navbar-search-button:focus {
+  color: #DFBA69;
+  outline: none;
+}
+
+.web-items {
+  padding-top: 70px;
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items {
+  flex: 0 1 28%;
+  display: flex;
+  margin: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #dadada;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.icons {
+  font-size: 24px;
+}
+
+
+.site-title {
+  float: left;
+}
+
+.content .price {
+  margin-top: 8px;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+#list-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: white;
+  color: rgb(44, 44, 44);
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.hidden {
+  display: none;
+}
+
+.item {
+  margin-top: 15px;
+  width: 300px;
+  height: 330px;
+  border-radius: 15px;
+
+}
+
+.tag {
+  padding-top: 10px;
+  display: flex;
+  height: 40px;
+}
+
+.p_tag {
+  width: auto;
+  height: 20px;
+  background: #DFBA69;
+  color: white;
+}
+.p_tag:hover {
+  width: auto;
+  height: 20px;
+  background: black;
+  color: white;
+}
+
+#list-button:hover {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: white;
+  color: #DFBA69;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
