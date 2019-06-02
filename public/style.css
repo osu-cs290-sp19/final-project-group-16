@@ -34,7 +34,7 @@ a:focus {
 
 
 .navbar-search {
-  
+
   margin-right: 20px;
   padding: 0;
   line-height: 38px;
@@ -80,6 +80,11 @@ a:focus {
   margin: 40px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.error-container {
+  margin-top: 200px;
+  text-align: center;
 }
 
 .items {
