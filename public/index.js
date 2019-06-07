@@ -77,7 +77,7 @@ var item9 = document.getElementById("item9");
 item1.addEventListener("click", function() {
   a++;
   document.getElementById("one").innerHTML = a;
-  document.getElementById("price1").innerHTML =parseFloat(Math.round(a * 49.99)).toFixed(2);;
+  document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 49.99)).toFixed(2);
 });
 
 subtracta.addEventListener("click", function() {
@@ -109,6 +109,12 @@ subtractb.addEventListener("click", function() {
   document.getElementById("price2").innerHTML = b * 1300;
 });
 
+addb.addEventListener("click", function() {
+  b++;
+  document.getElementById("two").innerHTML = b;
+  document.getElementById("price2").innerHTML = b * 1300;
+});
+
 item3.addEventListener("click", function() {
   c++;
   document.getElementById("three").innerHTML = c;
@@ -119,6 +125,12 @@ subtractc.addEventListener("click", function() {
   c--;
   if(c<=-1)
     c= 0;
+  document.getElementById("three").innerHTML = c;
+  document.getElementById("price3").innerHTML = c * 480;
+});
+
+addc.addEventListener("click", function() {
+  c++;
   document.getElementById("three").innerHTML = c;
   document.getElementById("price3").innerHTML = c * 480;
 });
@@ -137,6 +149,12 @@ subtractd.addEventListener("click", function() {
   document.getElementById("price4").innerHTML = d * 1480;
 });
 
+addd.addEventListener("click", function() {
+  d++;
+  document.getElementById("four").innerHTML = d;
+  document.getElementById("price4").innerHTML = d * 1480;
+});
+
 item5.addEventListener("click", function() {
   e++;
   document.getElementById("five").innerHTML = e;
@@ -145,6 +163,12 @@ item5.addEventListener("click", function() {
 
 subtracte.addEventListener("click", function() {
   e--;
+  document.getElementById("five").innerHTML = e;
+  document.getElementById("price5").innerHTML = e * 1880;
+});
+
+adde.addEventListener("click", function() {
+  e++;
   document.getElementById("five").innerHTML = e;
   document.getElementById("price5").innerHTML = e * 1880;
 });
@@ -163,6 +187,12 @@ subtractf.addEventListener("click", function() {
   document.getElementById("price6").innerHTML = f * 790;
 });
 
+addf.addEventListener("click", function() {
+  f++;
+  document.getElementById("six").innerHTML = f;
+  document.getElementById("price6").innerHTML = f * 790;
+});
+
 item7.addEventListener("click", function() {
   g++;
   document.getElementById("seven").innerHTML = g;
@@ -173,6 +203,12 @@ subtractg.addEventListener("click", function() {
   g--;
   if(g<=-1)
     g= 0;
+  document.getElementById("seven").innerHTML = g;
+  document.getElementById("price7").innerHTML = g * 30;
+});
+
+addg.addEventListener("click", function() {
+  g++;
   document.getElementById("seven").innerHTML = g;
   document.getElementById("price7").innerHTML = g * 30;
 });
@@ -191,6 +227,12 @@ subtracth.addEventListener("click", function() {
   document.getElementById("price8").innerHTML = h * 29;
 });
 
+addh.addEventListener("click", function() {
+  h++;
+  document.getElementById("eight").innerHTML = h;
+  document.getElementById("price8").innerHTML = h * 29;
+});
+
 item9.addEventListener("click", function() {
   i++;
   document.getElementById("nine").innerHTML = i;
@@ -201,6 +243,12 @@ subtracti.addEventListener("click", function() {
   i--;
   if(i<=-1)
     i= 0;
+  document.getElementById("nine").innerHTML = i;
+  document.getElementById("price9").innerHTML = i * 300;
+});
+
+addi.addEventListener("click", function() {
+  i++;
   document.getElementById("nine").innerHTML = i;
   document.getElementById("price9").innerHTML = i * 300;
 });
