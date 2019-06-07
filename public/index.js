@@ -81,7 +81,16 @@ item1.addEventListener("click", function() {
 });
 
 subtracta.addEventListener("click", function() {
-  a--
+  a--;
+  if(a<=-1)
+    a= 0;
+  document.getElementById("one").innerHTML = a;
+  document.getElementById("price1").innerHTML = a * 49.99;
+
+});
+
+adda.addEventListener("click", function() {
+  a++;
   document.getElementById("one").innerHTML = a;
   document.getElementById("price1").innerHTML = a * 49.99;
 });
@@ -94,6 +103,8 @@ item2.addEventListener("click", function() {
 
 subtractb.addEventListener("click", function() {
   b--
+  if(b<=-1)
+    b= 0;
   document.getElementById("two").innerHTML = b;
   document.getElementById("price2").innerHTML = b * 1300;
 });
@@ -106,6 +117,8 @@ item3.addEventListener("click", function() {
 
 subtractc.addEventListener("click", function() {
   c--;
+  if(c<=-1)
+    c= 0;
   document.getElementById("three").innerHTML = c;
   document.getElementById("price3").innerHTML = c * 480;
 });
@@ -118,6 +131,8 @@ item4.addEventListener("click", function() {
 
 subtractd.addEventListener("click", function() {
   d--;
+  if(d<=-1)
+    d= 0;
   document.getElementById("four").innerHTML = d;
   document.getElementById("price4").innerHTML = d * 1480;
 });
@@ -142,6 +157,8 @@ item6.addEventListener("click", function() {
 
 subtractf.addEventListener("click", function() {
   f--;
+  if(f<=-1)
+    f= 0;
   document.getElementById("six").innerHTML = f;
   document.getElementById("price6").innerHTML = f * 790;
 });
@@ -154,6 +171,8 @@ item7.addEventListener("click", function() {
 
 subtractg.addEventListener("click", function() {
   g--;
+  if(g<=-1)
+    g= 0;
   document.getElementById("seven").innerHTML = g;
   document.getElementById("price7").innerHTML = g * 30;
 });
@@ -166,6 +185,8 @@ item8.addEventListener("click", function() {
 
 subtracth.addEventListener("click", function() {
   h--;
+  if(h<=-1)
+    h= 0;
   document.getElementById("eight").innerHTML = h;
   document.getElementById("price8").innerHTML = h * 29;
 });
@@ -178,6 +199,8 @@ item9.addEventListener("click", function() {
 
 subtracti.addEventListener("click", function() {
   i--;
+  if(i<=-1)
+    i= 0;
   document.getElementById("nine").innerHTML = i;
   document.getElementById("price9").innerHTML = i * 300;
 });
