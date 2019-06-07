@@ -8,7 +8,7 @@
 var allItems = document.getElementsByClassName('items');
 var searchButton = document.getElementById('navbar-search-button');
 searchButton.addEventListener('click', searchItems);
-
+var a = 0;
 function searchItems() {
   /* get text input and all items */
   var inputStr = document.getElementById('navbar-search-input').value;
@@ -55,3 +55,11 @@ function searchItems() {
     }
   }
 }
+
+var item1 = document.getElementById("item1");
+var item2 = document.getElementById("item2");
+item1.addEventListener("click", function() {
+  a++;
+  document.getElementById("one").innerHTML = a;
+});
+
