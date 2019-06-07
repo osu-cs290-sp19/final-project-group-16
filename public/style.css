@@ -197,6 +197,12 @@ a:focus {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  overflow-y: auto;
+  height: 89vh;
+  top: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* The Close Button */

@@ -73,49 +73,113 @@ var item6 = document.getElementById("item6");
 var item7 = document.getElementById("item7");
 var item8 = document.getElementById("item8");
 var item9 = document.getElementById("item9");
+
 item1.addEventListener("click", function() {
   a++;
   document.getElementById("one").innerHTML = a;
+  document.getElementById("price1").innerHTML =parseFloat(Math.round(a * 49.99)).toFixed(2);;
+});
+
+subtracta.addEventListener("click", function() {
+  a--
+  document.getElementById("one").innerHTML = a;
+  document.getElementById("price1").innerHTML = a * 49.99;
 });
 
 item2.addEventListener("click", function() {
   b++;
   document.getElementById("two").innerHTML = b;
+  document.getElementById("price2").innerHTML = b * 1300;
+});
+
+subtractb.addEventListener("click", function() {
+  b--
+  document.getElementById("two").innerHTML = b;
+  document.getElementById("price2").innerHTML = b * 1300;
 });
 
 item3.addEventListener("click", function() {
   c++;
   document.getElementById("three").innerHTML = c;
+  document.getElementById("price3").innerHTML = c * 480;
+});
+
+subtractc.addEventListener("click", function() {
+  c--;
+  document.getElementById("three").innerHTML = c;
+  document.getElementById("price3").innerHTML = c * 480;
 });
 
 item4.addEventListener("click", function() {
   d++;
   document.getElementById("four").innerHTML = d;
+  document.getElementById("price4").innerHTML = d * 1480;
+});
+
+subtractd.addEventListener("click", function() {
+  d--;
+  document.getElementById("four").innerHTML = d;
+  document.getElementById("price4").innerHTML = d * 1480;
 });
 
 item5.addEventListener("click", function() {
   e++;
   document.getElementById("five").innerHTML = e;
+  document.getElementById("price5").innerHTML = e * 1880;
+});
+
+subtracte.addEventListener("click", function() {
+  e--;
+  document.getElementById("five").innerHTML = e;
+  document.getElementById("price5").innerHTML = e * 1880;
 });
 
 item6.addEventListener("click", function() {
   f++;
   document.getElementById("six").innerHTML = f;
+  document.getElementById("price6").innerHTML = f * 790;
+});
+
+subtractf.addEventListener("click", function() {
+  f--;
+  document.getElementById("six").innerHTML = f;
+  document.getElementById("price6").innerHTML = f * 790;
 });
 
 item7.addEventListener("click", function() {
   g++;
   document.getElementById("seven").innerHTML = g;
+  document.getElementById("price7").innerHTML = g * 30;
+});
+
+subtractg.addEventListener("click", function() {
+  g--;
+  document.getElementById("seven").innerHTML = g;
+  document.getElementById("price7").innerHTML = g * 30;
 });
 
 item8.addEventListener("click", function() {
   h++;
   document.getElementById("eight").innerHTML = h;
+  document.getElementById("price8").innerHTML = h * 29;
+});
+
+subtracth.addEventListener("click", function() {
+  h--;
+  document.getElementById("eight").innerHTML = h;
+  document.getElementById("price8").innerHTML = h * 29;
 });
 
 item9.addEventListener("click", function() {
   i++;
   document.getElementById("nine").innerHTML = i;
+  document.getElementById("price9").innerHTML = i * 300;
+});
+
+subtracti.addEventListener("click", function() {
+  i--;
+  document.getElementById("nine").innerHTML = i;
+  document.getElementById("price9").innerHTML = i * 300;
 });
 
 // Get the modal
