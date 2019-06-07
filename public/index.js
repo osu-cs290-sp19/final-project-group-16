@@ -9,6 +9,14 @@ var allItems = document.getElementsByClassName('items');
 var searchButton = document.getElementById('navbar-search-button');
 searchButton.addEventListener('click', searchItems);
 var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+var e = 0;
+var f = 0;
+var g = 0;
+var h = 0;
+var i = 0;
 function searchItems() {
   /* get text input and all items */
   var inputStr = document.getElementById('navbar-search-input').value;
@@ -58,8 +66,80 @@ function searchItems() {
 
 var item1 = document.getElementById("item1");
 var item2 = document.getElementById("item2");
+var item3 = document.getElementById("item3");
+var item4 = document.getElementById("item4");
+var item5 = document.getElementById("item5");
+var item6 = document.getElementById("item6");
+var item7 = document.getElementById("item7");
+var item8 = document.getElementById("item8");
+var item9 = document.getElementById("item9");
 item1.addEventListener("click", function() {
   a++;
   document.getElementById("one").innerHTML = a;
 });
 
+item2.addEventListener("click", function() {
+  b++;
+  document.getElementById("two").innerHTML = b;
+});
+
+item3.addEventListener("click", function() {
+  c++;
+  document.getElementById("three").innerHTML = c;
+});
+
+item4.addEventListener("click", function() {
+  d++;
+  document.getElementById("four").innerHTML = d;
+});
+
+item5.addEventListener("click", function() {
+  e++;
+  document.getElementById("five").innerHTML = e;
+});
+
+item6.addEventListener("click", function() {
+  f++;
+  document.getElementById("six").innerHTML = f;
+});
+
+item7.addEventListener("click", function() {
+  g++;
+  document.getElementById("seven").innerHTML = g;
+});
+
+item8.addEventListener("click", function() {
+  h++;
+  document.getElementById("eight").innerHTML = h;
+});
+
+item9.addEventListener("click", function() {
+  i++;
+  document.getElementById("nine").innerHTML = i;
+});
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("list-button");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
