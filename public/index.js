@@ -4,6 +4,18 @@
   By: Theresa Mai
 */
 
+/*
+  Name: Cart calculate (ADD/SUB)
+  Description: Set up the item cart calculate
+  By: Susan
+*/
+
+/*
+  Name: PLUS CART FROM
+  Description: add the item from the image
+  By: Jaegeun
+*/
+
 /* make the search button clickable and workable */
 var allItems = document.getElementsByClassName('items');
 var searchButton = document.getElementById('navbar-search-button');
@@ -64,22 +76,6 @@ function searchItems() {
   }
 }
 
-var item1 = document.getElementById("item1");
-var item2 = document.getElementById("item2");
-var item3 = document.getElementById("item3");
-var item4 = document.getElementById("item4");
-var item5 = document.getElementById("item5");
-var item6 = document.getElementById("item6");
-var item7 = document.getElementById("item7");
-var item8 = document.getElementById("item8");
-var item9 = document.getElementById("item9");
-
-item1.addEventListener("click", function() {
-  a++;
-  document.getElementById("one").innerHTML = a;
-  document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 49.99)).toFixed(2);
-});
-
 subtracta.addEventListener("click", function() {
   a--;
   if(a<=-1)
@@ -93,12 +89,6 @@ adda.addEventListener("click", function() {
   a++;
   document.getElementById("one").innerHTML = a;
   document.getElementById("price1").innerHTML = a * 49.99;
-});
-
-item2.addEventListener("click", function() {
-  b++;
-  document.getElementById("two").innerHTML = b;
-  document.getElementById("price2").innerHTML = b * 1300;
 });
 
 subtractb.addEventListener("click", function() {
@@ -115,10 +105,11 @@ addb.addEventListener("click", function() {
   document.getElementById("price2").innerHTML = b * 1300;
 });
 
-item3.addEventListener("click", function() {
-  c++;
-  document.getElementById("three").innerHTML = c;
-  document.getElementById("price3").innerHTML = c * 480;
+cartb.addEventListener("click", function() {
+  b++;
+  document.getElementById("two").innerHTML = b;
+  document.getElementById("price2").innerHTML = b * 1300;
+  alert("Add the 'Men's Black Metal Mix Wool Jumper' to the cart.");
 });
 
 subtractc.addEventListener("click", function() {
@@ -135,10 +126,11 @@ addc.addEventListener("click", function() {
   document.getElementById("price3").innerHTML = c * 480;
 });
 
-item4.addEventListener("click", function() {
-  d++;
-  document.getElementById("four").innerHTML = d;
-  document.getElementById("price4").innerHTML = d * 1480;
+cartc.addEventListener("click", function() {
+  c++;
+  document.getElementById("three").innerHTML = c;
+  document.getElementById("price3").innerHTML = c * 480;
+  alert("Add the 'Washed T-shirt with Gucci Logo' to the cart.");
 });
 
 subtractd.addEventListener("click", function() {
@@ -155,14 +147,17 @@ addd.addEventListener("click", function() {
   document.getElementById("price4").innerHTML = d * 1480;
 });
 
-item5.addEventListener("click", function() {
-  e++;
-  document.getElementById("five").innerHTML = e;
-  document.getElementById("price5").innerHTML = e * 1880;
+cartd.addEventListener("click", function() {
+  d++;
+  document.getElementById("four").innerHTML = d;
+  document.getElementById("price4").innerHTML = d * 1480;
+  alert("Add the 'Côte d'Azur Patch Sweatshirt' to the cart.");
 });
 
 subtracte.addEventListener("click", function() {
   e--;
+  if(e<=-1)
+    e= 0;
   document.getElementById("five").innerHTML = e;
   document.getElementById("price5").innerHTML = e * 1880;
 });
@@ -173,10 +168,11 @@ adde.addEventListener("click", function() {
   document.getElementById("price5").innerHTML = e * 1880;
 });
 
-item6.addEventListener("click", function() {
-  f++;
-  document.getElementById("six").innerHTML = f;
-  document.getElementById("price6").innerHTML = f * 790;
+carte.addEventListener("click", function() {
+  e++;
+  document.getElementById("five").innerHTML = e;
+  document.getElementById("price5").innerHTML = e * 1880;
+  alert("Add the 'Gucci Zumi Smooth' to the cart.");
 });
 
 subtractf.addEventListener("click", function() {
@@ -193,10 +189,11 @@ addf.addEventListener("click", function() {
   document.getElementById("price6").innerHTML = f * 790;
 });
 
-item7.addEventListener("click", function() {
-  g++;
-  document.getElementById("seven").innerHTML = g;
-  document.getElementById("price7").innerHTML = g * 30;
+cartf.addEventListener("click", function() {
+  f++;
+  document.getElementById("six").innerHTML = f;
+  document.getElementById("price6").innerHTML = f * 790;
+  alert("Add the 'Dique Gucci Hoodie' to the cart.");
 });
 
 subtractg.addEventListener("click", function() {
@@ -213,10 +210,11 @@ addg.addEventListener("click", function() {
   document.getElementById("price7").innerHTML = g * 30;
 });
 
-item8.addEventListener("click", function() {
-  h++;
-  document.getElementById("eight").innerHTML = h;
-  document.getElementById("price8").innerHTML = h * 29;
+cartg.addEventListener("click", function() {
+  g++;
+  document.getElementById("seven").innerHTML = g;
+  document.getElementById("price7").innerHTML = g * 30;
+  alert("Add the 'Gucci's Vintage Classic T-shirt' to the cart.");
 });
 
 subtracth.addEventListener("click", function() {
@@ -233,10 +231,11 @@ addh.addEventListener("click", function() {
   document.getElementById("price8").innerHTML = h * 29;
 });
 
-item9.addEventListener("click", function() {
-  i++;
-  document.getElementById("nine").innerHTML = i;
-  document.getElementById("price9").innerHTML = i * 300;
+carth.addEventListener("click", function() {
+  h++;
+  document.getElementById("eight").innerHTML = h;
+  document.getElementById("price8").innerHTML = h * 29;
+  alert("Add the 'Gucci Dabbing Unicorn Youth Shirt' to the cart.");
 });
 
 subtracti.addEventListener("click", function() {
@@ -262,9 +261,49 @@ var btn = document.getElementById("list-button");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+//Get the item1
+var li1 = document.getElementsByClassName("i1")[0];
+var li2 = document.getElementsByClassName("i2")[0];
+var li3 = document.getElementsByClassName("i3")[0];
+var li4 = document.getElementsByClassName("i4")[0];
+var li5 = document.getElementsByClassName("i5")[0];
+var li6 = document.getElementsByClassName("i6")[0];
+var li7 = document.getElementsByClassName("i7")[0];
+var li8 = document.getElementsByClassName("i8")[0];
+var li9 = document.getElementsByClassName("i9")[0];
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
+  if(a > 0) {
+    li1.style.display = "block";
+    console.log(a)
+  }
+  if(b > 0) {
+    li2.style.display = "block";
+  }
+  if(c > 0) {
+    li3.style.display = "block";
+  }
+  if(d > 0) {
+    li4.style.display = "block";
+  }
+  if(e > 0) {
+    li5.style.display = "block";
+  }
+  if(f > 0) {
+    li6.style.display = "block";
+  }
+  if(g > 0) {
+    li7.style.display = "block";
+  }
+  if(h > 0) {
+    li8.style.display = "block";
+  }
+  if(i > 0) {
+    li9.style.display = "block";
+  }
+  document.getElementById("totalp").innerHTML = (a*49.99) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -278,3 +317,42 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//slide show
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+carta.addEventListener("click", function() {
+  a++;
+  document.getElementById("one").innerHTML = a;
+  document.getElementById("price1").innerHTML = a * 49.99;
+  alert("Add the 'Trump Supreme T-shirt' to the cart.");
+
+});
+
+carti.addEventListener("click", function() {
+  i++;
+  document.getElementById("nine").innerHTML = i;
+  document.getElementById("price9").innerHTML = i * 300;
+  alert("Add the 'Vintage Men's Red Gucci Shirt' to the cart.");
+});

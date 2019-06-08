@@ -4,24 +4,36 @@ body {
   background-color: #eee;
 }
 
+h1 {
+margin-left: 5px;
+}
+
 header {
   width:100%;
   height: auto;
-  position:fixed;
   top:0px;
   height: 80px;
-  background-color: white;
+  background-color: #515151;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-a {
+a.name {
   text-decoration: none;
-  color: #343434;
+  color: white;
 }
 
+a.logo:hover,
+a.price:hover,
 a:hover,
 a:focus {
   color: #DFBA69;
+}
+
+a.logo,
+a.price,
+a.prince:visited {
+  color: black;
+  text-decoration: none;
 }
 
 a:focus {
@@ -67,17 +79,19 @@ a:focus {
 }
 
 #navbar-search-button:hover {
-  color: #DFBA69;
+  color: #FABE28;
 }
 
 #navbar-search-button:focus {
-  color: #DFBA69;
+  color: #FABE28;
   outline: none;
 }
 
 .web-items {
-  padding-top: 70px;
-  margin: 40px;
+  margin-top: -200px;
+  margin-left: 55px;
+  margin-right: 20px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -90,6 +104,7 @@ a:focus {
 .items {
   flex: 0 1 28%;
   display: flex;
+    position: relative;
   margin: 5px;
   padding: 20px;
   margin-bottom: 15px;
@@ -138,7 +153,14 @@ a:focus {
   width: 300px;
   height: 330px;
   border-radius: 15px;
+}
 
+.item:hover {
+  margin-top: 15px;
+  width: 300px;
+  height: 330px;
+  border-radius: 15px;
+  opacity: 0.7;
 }
 
 .tag {
@@ -170,7 +192,7 @@ a:focus {
   border-radius: 30px;
   font-size: 30px;
   background-color: white;
-  color: #DFBA69;
+  color: #FABE28;
   cursor: pointer;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
 }
@@ -205,17 +227,80 @@ a:focus {
   transform: translateX(-50%);
 }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
   font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.mySlides::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #eee 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+}
+
+.addcart {
+  border: none;
+  font-size: 25px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.addcart:hover {
+  border: none;
+  font-size: 25px;
+  background-color: white;
+  cursor: pointer;
+  color: #FABE28;
+}
+
+.itemlist {
+  width: 100%;
+  height: 160px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.i1,.i2,.i3,.i4,.i5,.i6,.i7,.i8,.i9 {
+  display: none;
+}
+.cart-item {
+  float:left;
+  width: 170px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.inside {
+  width: auto;
+  padding-left: 200px;
+}
+
+.btn_D {
+  border: none;
+  background: white;
+}
+
+.btn_D:hover {
+  color: blue;
+  text-decoration: underline;
   cursor: pointer;
 }
