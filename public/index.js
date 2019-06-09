@@ -81,14 +81,14 @@ subtracta.addEventListener("click", function() {
   if(a<=-1)
     a= 0;
   document.getElementById("one").innerHTML = a;
-  document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 49.99)).toFixed(2);
+  document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 50)).toFixed(2);
 
 });
 
 adda.addEventListener("click", function() {
   a++;
   document.getElementById("one").innerHTML = a;
-  document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 49.99)).toFixed(2);
+  document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 50)).toFixed(2);
 });
 
 subtractb.addEventListener("click", function() {
@@ -151,7 +151,7 @@ cartd.addEventListener("click", function() {
   d++;
   document.getElementById("four").innerHTML = d;
   document.getElementById("price4").innerHTML = parseFloat(Math.round(d * 1480)).toFixed(2);
-  alert("Add the 'Côte d'Azur Patch Sweatshirt' to the cart.");
+  alert("Add the 'Cï¿½te d'Azur Patch Sweatshirt' to the cart.");
 });
 
 subtracte.addEventListener("click", function() {
@@ -159,19 +159,19 @@ subtracte.addEventListener("click", function() {
   if(e<=-1)
     e= 0;
   document.getElementById("five").innerHTML = e;
-  document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);  
+  document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);
 });
 
 adde.addEventListener("click", function() {
   e++;
   document.getElementById("five").innerHTML = e;
-  document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);  
+  document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);
 });
 
 carte.addEventListener("click", function() {
   e++;
   document.getElementById("five").innerHTML = e;
-  document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);  
+  document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);
   alert("Add the 'Gucci Zumi Smooth' to the cart.");
 });
 
@@ -272,7 +272,7 @@ var li7 = document.getElementsByClassName("i7")[0];
 var li8 = document.getElementsByClassName("i8")[0];
 var li9 = document.getElementsByClassName("i9")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
   if(a > 0) {
@@ -303,7 +303,7 @@ btn.onclick = function() {
   if(i > 0) {
     li9.style.display = "block";
   }
-  document.getElementById("totalp").innerHTML = (a*49.99) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -334,18 +334,18 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
 }
 
 carta.addEventListener("click", function() {
   a++;
   document.getElementById("one").innerHTML = a;
-  document.getElementById("price1").innerHTML = a * 49.99;
+  document.getElementById("price1").innerHTML = a * 50;
   alert("Add the 'Trump Supreme T-shirt' to the cart.");
 
 });
