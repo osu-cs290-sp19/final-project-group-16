@@ -44,6 +44,8 @@ app.get('/', function (req, res, next) {
 });
 
 // if get request for brand items, return page with such items
+// hidden for now
+/*
 app.get('/:name', function (req, res, next) {
   var name = req.params.name.toUpperCase();
   var collection = db.collection('items');
@@ -61,6 +63,7 @@ app.get('/:name', function (req, res, next) {
     }
   });
 });
+*/
 
 // if get easter egg request, return easter egg
 app.get('/aiden-sco-ducks', function (req, res, next) {
