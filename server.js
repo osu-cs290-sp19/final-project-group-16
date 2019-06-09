@@ -9,11 +9,11 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 // mongo log in info
-var mongoHost = process.env.MONGO_HOST || "classmongo.engr.oregonstate.edu";
-var mongoPort = process.env.MONGO_PORT || 27017;
-var mongoUser = process.env.MONGO_USER || "cs290_maithe";
-var mongoPassword = process.env.MONGO_PASSWORD || "cs290_maithe";
-var mongoDBName = process.env.MONGO_DB_NAME || "cs290_maithe";
+var mongoHost = "classmongo.engr.oregonstate.edu";
+var mongoPort = 27017;
+var mongoUser = "cs290_maithe";
+var mongoPassword = "cs290_maithe";
+var mongoDBName = "cs290_maithe";
 
 var mongoUrl = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`;
 var db = null;
@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
-// if get normal request, return home page
+// if get home page request, return home page
 app.get('/', function (req, res, next) {
   var collection = db.collection('items');
   collection.find({}).toArray(function (err, items) {
@@ -38,6 +38,25 @@ app.get('/', function (req, res, next) {
       res.status(200).render('homePage', {
         items: items,
         title: "Tab Market"
+      });
+    }
+  });
+});
+
+// if get request for brand items, return page with such items
+app.get('/:name', function (req, res, next) {
+  var name = req.params.name.toUpperCase();
+  var collection = db.collection('items');
+  collection.find({ brand: name }).toArray(function (err, items) {
+    if (err) {
+      res.status(500).send({
+        error: "Error fetching items from DB"
+      });
+    } else {
+      console.log("== items:", items);
+      res.status(200).render('homePage', {
+        items: items,
+        title: "Tab Market - " + name
       });
     }
   });
