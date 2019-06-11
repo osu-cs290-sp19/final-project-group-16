@@ -44,7 +44,6 @@ app.get('/', function (req, res, next) {
 });
 
 // if get request for brand items, return page with such items
-// hidden for now
 /*
 app.get('/:name', function (req, res, next) {
   var name = req.params.name.toUpperCase();
@@ -54,11 +53,17 @@ app.get('/:name', function (req, res, next) {
       res.status(500).send({
         error: "Error fetching items from DB"
       });
-    } else {
+    }
+    else if (items.length == 0) {
+      res.status(404).render('404', {
+        title: "Tab Market"
+      });
+    }
+    else {
       console.log("== items:", items);
       res.status(200).render('homePage', {
         items: items,
-        title: "Tab Market - " + name
+        title: "Tab Market"
       });
     }
   });
