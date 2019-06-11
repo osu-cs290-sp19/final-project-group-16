@@ -392,3 +392,11 @@ carti.addEventListener("click", function() {
   document.getElementById("price9").innerHTML = i * 300;
   alert("Add the 'Vintage Men's Red Gucci Shirt' to the cart.");
 });
+
+/* when website title is clicked, make all items appear again */
+var siteTitle = document.getElementsByClassName("site-title")[0];
+siteTitle.addEventListener("click", function() {
+  for (var i = allItems.length - 1; i > -1; i--) {
+    allItems[i].style.display = "flex";
+  }
+});
