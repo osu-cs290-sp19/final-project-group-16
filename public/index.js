@@ -78,8 +78,10 @@ function searchItems() {
 
 subtracta.addEventListener("click", function() {
   a--;
-  if(a<=-1)
+  if(a<=0) {
     a= 0;
+    li1.style.display = "none";
+  }
   document.getElementById("one").innerHTML = a;
   document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 50)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -95,8 +97,10 @@ adda.addEventListener("click", function() {
 
 subtractb.addEventListener("click", function() {
   b--
-  if(b<=-1)
+  if(b<=0) {
     b= 0;
+    li2.style.display = "none";
+  }
   document.getElementById("two").innerHTML = b;
   document.getElementById("price2").innerHTML = parseFloat(Math.round(b * 1300)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -118,8 +122,10 @@ cartb.addEventListener("click", function() {
 
 subtractc.addEventListener("click", function() {
   c--;
-  if(c<=-1)
+  if(c<=0) {
     c= 0;
+    li3.style.display = "none";
+  }
   document.getElementById("three").innerHTML = c;
   document.getElementById("price3").innerHTML = parseFloat(Math.round(c * 480)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -141,8 +147,10 @@ cartc.addEventListener("click", function() {
 
 subtractd.addEventListener("click", function() {
   d--;
-  if(d<=-1)
+  if(d<=0) {
     d= 0;
+    li4.style.display = "none";
+  }
   document.getElementById("four").innerHTML = d;
   document.getElementById("price4").innerHTML = parseFloat(Math.round(d * 1480)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -164,8 +172,10 @@ cartd.addEventListener("click", function() {
 
 subtracte.addEventListener("click", function() {
   e--;
-  if(e<=-1)
+  if(e<=0) {
     e= 0;
+    li5.style.display = "none";
+  }
   document.getElementById("five").innerHTML = e;
   document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -187,8 +197,10 @@ carte.addEventListener("click", function() {
 
 subtractf.addEventListener("click", function() {
   f--;
-  if(f<=-1)
+  if(f<=0) {
     f= 0;
+    li6.style.display = "none";
+  }
   document.getElementById("six").innerHTML = f;
   document.getElementById("price6").innerHTML = parseFloat(Math.round(f * 790)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -210,8 +222,10 @@ cartf.addEventListener("click", function() {
 
 subtractg.addEventListener("click", function() {
   g--;
-  if(g<=-1)
+  if(g<=0) {
     g= 0;
+    li7.style.display = "none";
+  }
   document.getElementById("seven").innerHTML = g;
   document.getElementById("price7").innerHTML = parseFloat(Math.round(g * 30)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -233,8 +247,10 @@ cartg.addEventListener("click", function() {
 
 subtracth.addEventListener("click", function() {
   h--;
-  if(h<=-1)
+  if(h<=0) {
     h= 0;
+    li8.style.display = "none";
+  }
   document.getElementById("eight").innerHTML = h;
   document.getElementById("price8").innerHTML = parseFloat(Math.round(h * 29)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
@@ -256,8 +272,10 @@ carth.addEventListener("click", function() {
 
 subtracti.addEventListener("click", function() {
   i--;
-  if(i<=-1)
+  if(i<=0) {
     i= 0;
+    li9.style.display = "none";
+  }
   document.getElementById("nine").innerHTML = i;
   document.getElementById("price9").innerHTML = parseFloat(Math.round(i * 300)).toFixed(2);
   document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
