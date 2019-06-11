@@ -82,6 +82,7 @@ subtracta.addEventListener("click", function() {
     a= 0;
   document.getElementById("one").innerHTML = a;
   document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 50)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 
 });
 
@@ -89,6 +90,7 @@ adda.addEventListener("click", function() {
   a++;
   document.getElementById("one").innerHTML = a;
   document.getElementById("price1").innerHTML = parseFloat(Math.round(a * 50)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 subtractb.addEventListener("click", function() {
@@ -97,12 +99,14 @@ subtractb.addEventListener("click", function() {
     b= 0;
   document.getElementById("two").innerHTML = b;
   document.getElementById("price2").innerHTML = parseFloat(Math.round(b * 1300)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 addb.addEventListener("click", function() {
   b++;
   document.getElementById("two").innerHTML = b;
   document.getElementById("price2").innerHTML = parseFloat(Math.round(b * 1300)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 cartb.addEventListener("click", function() {
@@ -118,12 +122,14 @@ subtractc.addEventListener("click", function() {
     c= 0;
   document.getElementById("three").innerHTML = c;
   document.getElementById("price3").innerHTML = parseFloat(Math.round(c * 480)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 addc.addEventListener("click", function() {
   c++;
   document.getElementById("three").innerHTML = c;
   document.getElementById("price3").innerHTML = parseFloat(Math.round(c * 480)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 cartc.addEventListener("click", function() {
@@ -139,12 +145,14 @@ subtractd.addEventListener("click", function() {
     d= 0;
   document.getElementById("four").innerHTML = d;
   document.getElementById("price4").innerHTML = parseFloat(Math.round(d * 1480)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 addd.addEventListener("click", function() {
   d++;
   document.getElementById("four").innerHTML = d;
   document.getElementById("price4").innerHTML = parseFloat(Math.round(d * 1480)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 cartd.addEventListener("click", function() {
@@ -160,12 +168,14 @@ subtracte.addEventListener("click", function() {
     e= 0;
   document.getElementById("five").innerHTML = e;
   document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 adde.addEventListener("click", function() {
   e++;
   document.getElementById("five").innerHTML = e;
   document.getElementById("price5").innerHTML = parseFloat(Math.round(e * 1880)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 carte.addEventListener("click", function() {
@@ -181,12 +191,14 @@ subtractf.addEventListener("click", function() {
     f= 0;
   document.getElementById("six").innerHTML = f;
   document.getElementById("price6").innerHTML = parseFloat(Math.round(f * 790)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 addf.addEventListener("click", function() {
   f++;
   document.getElementById("six").innerHTML = f;
   document.getElementById("price6").innerHTML = parseFloat(Math.round(f * 790)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 cartf.addEventListener("click", function() {
@@ -202,12 +214,14 @@ subtractg.addEventListener("click", function() {
     g= 0;
   document.getElementById("seven").innerHTML = g;
   document.getElementById("price7").innerHTML = parseFloat(Math.round(g * 30)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 addg.addEventListener("click", function() {
   g++;
   document.getElementById("seven").innerHTML = g;
   document.getElementById("price7").innerHTML = parseFloat(Math.round(g * 30)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 cartg.addEventListener("click", function() {
@@ -223,12 +237,14 @@ subtracth.addEventListener("click", function() {
     h= 0;
   document.getElementById("eight").innerHTML = h;
   document.getElementById("price8").innerHTML = parseFloat(Math.round(h * 29)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 addh.addEventListener("click", function() {
   h++;
   document.getElementById("eight").innerHTML = h;
   document.getElementById("price8").innerHTML = parseFloat(Math.round(h * 29)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 carth.addEventListener("click", function() {
@@ -244,12 +260,14 @@ subtracti.addEventListener("click", function() {
     i= 0;
   document.getElementById("nine").innerHTML = i;
   document.getElementById("price9").innerHTML = parseFloat(Math.round(i * 300)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 addi.addEventListener("click", function() {
   i++;
   document.getElementById("nine").innerHTML = i;
   document.getElementById("price9").innerHTML = parseFloat(Math.round(i * 300)).toFixed(2);
+  document.getElementById("totalp").innerHTML = (a*50) + (b*1300) + (c*480) + (d*1480) + (e*1880) + (f*790) + (g*30) + (h*29) + (i*300);
 });
 
 // Get the modal
@@ -356,4 +374,3 @@ carti.addEventListener("click", function() {
   document.getElementById("price9").innerHTML = i * 300;
   alert("Add the 'Vintage Men's Red Gucci Shirt' to the cart.");
 });
-0
