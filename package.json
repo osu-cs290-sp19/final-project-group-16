@@ -1,0 +1,32 @@
+{
+  "name": "final-project-group-16",
+  "version": "1.0.0",
+  "description": "Needed stuff for final project for group 16.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongodb": "^3.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-sp19/final-project-group-16.git"
+  },
+  "keywords": [
+    "final",
+    "project",
+    "group",
+    "16"
+  ],
+  "author": "Jaegeun Oh, Nathan Liu, Susan Liu, Theresa Mai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-sp19/final-project-group-16/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-sp19/final-project-group-16#readme"
+}
